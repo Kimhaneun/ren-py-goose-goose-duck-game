@@ -19,11 +19,11 @@ define mina = Character(
     cb_sfx=audio.sfx_TypeWriter
 )
 
-define nio = Character(
-    "니오",
-    image="nio",
+define nia = Character(
+    "니아",
+    image="nia",
     callback=dialogue_callback,
-    cb_speaker_tag="nio",
+    cb_speaker_tag="nia",
     cb_sfx=audio.sfx_TypeWriter
 )
 

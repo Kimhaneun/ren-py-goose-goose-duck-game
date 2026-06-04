@@ -76,6 +76,22 @@ label day01_deduction_tg_cctv:
 
     return
 
+label day01_deduction_tg_cctv_screen:
+
+    window hide dissolve_fast
+
+    show cctv_screen at truecenter
+    with dissolve_normal
+
+    pause
+
+    hide cctv_screen
+    with dissolve_slow
+
+    window show dissolve_fast
+
+    return
+
 
 label day01_deduction_tg_footprint:
 
@@ -172,13 +188,13 @@ label day01_deduction_start:
     mina "대체 이게 무슨 일이에요..."
 
     $ hide_char("mina")
-    $ show_char("nio", "right", flip=True)
+    $ show_char("nia", "right", flip=True)
 
-    nio "모로 씨가 정말 죽은 거예요?"
+    nia "모로 씨가 정말 죽은 거예요?"
 
     jin "네."
 
-    $ hide_char("nio")
+    $ hide_char("nia")
     $ show_char("jun", "right", flip=True)
 
     jun "모로 님의 죽음이 정말 사고가 아니라는 겁니까?"
@@ -285,15 +301,15 @@ label day01_deduction_cause_right:
     jin "그을음 때문에 처음엔 잘 보이지 않았지만, 옷 안쪽에 자상이 있었습니다."
 
     $ hide_char("mina")
-    $ show_char("nio", "right", flip=True)
+    $ show_char("nia", "right", flip=True)
 
-    nio "그럼 불에 타 죽은 게 아니라..."
+    nia "그럼 불에 타 죽은 게 아니라..."
 
     jin "누군가 먼저 그를 공격했고, 이후 불을 낸 겁니다."
 
     call day01_deduction_tg_igature from _call_day01_deduction_tg_igature
 
-    $ hide_char("nio")
+    $ hide_char("nia")
     $ show_char("sein", "right", flip=True)
 
     sein "다른 흔적도 있었나요?"
@@ -318,12 +334,12 @@ label day01_deduction_weapon_question:
 
     $ clear_chars()
     $ show_char("jin", "left")
-    $ show_char("nio", "right", flip=True)
+    $ show_char("nia", "right", flip=True)
     with dissolve_normal
 
-    nio "잠깐만요."
+    nia "잠깐만요."
 
-    nio "그럼 범인은 뭘로 모로 씨를 죽인 거예요?"
+    nia "그럼 범인은 뭘로 모로 씨를 죽인 거예요?"
 
     menu:
         "화로의 불길로 죽였다.":
@@ -421,7 +437,7 @@ label day01_deduction_cctv_recovery:
 
     "준은 식탁 위에 복구한 사진을 내려놓았다."
 
-    call day01_deduction_tg_cctv from _call_day01_deduction_tg_cctv
+    call day01_deduction_tg_cctv_screen from _call_day01_deduction_tg_cctv_screen
 
     "사진에는 서재 안쪽이 흐릿하게 찍혀 있었다."
 
@@ -435,6 +451,10 @@ label day01_deduction_cctv_recovery:
 
     "루이였다."
 
+    $ add_clue("cctv_screen")
+
+    ##
+
     $ hide_char("jun")
     $ show_char("mina", "right", flip=True)
 
@@ -446,11 +466,11 @@ label day01_deduction_cctv_recovery:
     rui "아니요. 제가 아닙니다."
 
     $ hide_char("rui")
-    $ show_char("nio", "right", flip=True)
+    $ show_char("nia", "right", flip=True)
 
-    nio "하지만 사진에는 루이 씨가..."
+    nia "하지만 사진에는 루이 씨가..."
 
-    $ hide_char("nio")
+    $ hide_char("nia")
     $ show_char("sein", "right", flip=True)
 
     sein "사진만 보면 그렇게 보입니다."
@@ -498,9 +518,9 @@ label day01_deduction_cctv_recovery:
     mina "알리바이를 증명해 줄 사람은 없다는 거군요."
 
     $ hide_char("mina")
-    $ show_char("nio", "right", flip=True)
+    $ show_char("nia", "right", flip=True)
 
-    nio "뭐야.. 진짜 루이씨가 범인?"
+    nia "뭐야.. 진짜 루이씨가 범인?"
 
     jin "그걸 지금부터 확인해야 합니다."
 
@@ -585,11 +605,11 @@ label day01_deduction_disguise_right:
     "식당 안이 술렁였다."
 
     $ hide_char("jun")
-    $ show_char("nio", "right", flip=True)
+    $ show_char("nia", "right", flip=True)
 
-    nio "잠깐만요. 그럼 우리 중에 변장술사가 있다는 거예요?"
+    nia "잠깐만요. 그럼 우리 중에 변장술사가 있다는 거예요?"
 
-    $ hide_char("nio")
+    $ hide_char("nia")
     $ show_char("sein", "right", flip=True)
 
     sein "가능성은 생겼습니다."
@@ -710,15 +730,15 @@ label day01_deduction_fire_reason_right:
     jin "하지만 결정적인 부분에서 진짜 루이 씨와 다릅니다."
 
     $ hide_char("mina")
-    $ show_char("nio", "right", flip=True)
+    $ show_char("nia", "right", flip=True)
 
-    nio "뭐가요?"
+    nia "뭐가요?"
 
     jin "범인은 그 차이를 감추기 위해 화재를 일으켰습니다."
 
     jin "카메라를 손상시키고, 영상의 선명도를 떨어뜨리기 위해서요."
 
-    $ hide_char("nio")
+    $ hide_char("nia")
     $ show_char("jun", "right", flip=True)
 
     jun "그 차이가 무엇입니까?"
@@ -787,11 +807,11 @@ label day01_deduction_hidden_detail_right:
     rui "맞습니다. 저는 왼손을 씁니다."
 
     $ hide_char("rui")
-    $ show_char("nio", "right", flip=True)
+    $ show_char("nia", "right", flip=True)
 
-    nio "그러고 보니 아까도 메모할 때 왼손으로 쓰셨던 것 같은데요."
+    nia "그러고 보니 아까도 메모할 때 왼손으로 쓰셨던 것 같은데요."
 
-    $ hide_char("nio")
+    $ hide_char("nia")
     $ show_char("sein", "right", flip=True)
 
     sein "사진 속 인물은 오른손을 쓰고 있었습니다."
@@ -860,13 +880,13 @@ label day01_deduction_mistake_and_fire:
     jin "실수를 숨기기 위해, 다시 현장으로 돌아간 겁니다."
 
     $ hide_char("rui")
-    $ show_char("nio", "right", flip=True)
+    $ show_char("nia", "right", flip=True)
 
-    nio "그럼 그때 뭔가 남겼겠네요?"
+    nia "그럼 그때 뭔가 남겼겠네요?"
 
     jin "남겼습니다."
 
-    $ hide_char("nio")
+    $ hide_char("nia")
     $ show_char("sein", "right", flip=True)
 
     sein "무엇을 말입니까?"
@@ -905,13 +925,13 @@ label day01_deduction_footprint_wrong:
 
     $ clear_chars()
     $ show_char("jin", "left")
-    $ show_char("nio", "right", flip=True)
+    $ show_char("nia", "right", flip=True)
 
-    nio "흠... 아닌 것 같은데요?"
+    nia "흠... 아닌 것 같은데요?"
 
-    nio "소화기는 진 씨가 불을 끌 때 쓴 거잖아요. 범인이 다시 갔던 건 그 전일 수도 있잖아요?"
+    nia "소화기는 진 씨가 불을 끌 때 쓴 거잖아요. 범인이 다시 갔던 건 그 전일 수도 있잖아요?"
 
-    $ hide_char("nio")
+    $ hide_char("nia")
     $ show_char("rui", "right", flip=True)
 
     rui "시간 순서상 와인 자국이 더 먼저 생겼습니다."
@@ -956,15 +976,15 @@ label day01_deduction_footprint_right:
     jin "그리고 애초에 루이 씨의 신발에는 와인 자국이 없었습니다."
 
     $ hide_char("rui")
-    $ show_char("nio", "right", flip=True)
+    $ show_char("nia", "right", flip=True)
 
-    nio "그럼 사진 속 루이 씨는..."
+    nia "그럼 사진 속 루이 씨는..."
 
     jin "진짜 루이 씨가 아닙니다."
 
     jin "루이 씨로 변장한 범인이죠."
 
-    $ hide_char("nio")
+    $ hide_char("nia")
     $ show_char("rui", "right", flip=True)
 
     rui "그렇다면 발자국을 비교하면 되겠군요!"
@@ -1025,11 +1045,11 @@ label day01_confession:
     rui "이안 씨...?"
 
     $ hide_char("rui")
-    $ show_char("nio", "right", flip=True)
+    $ show_char("nia", "right", flip=True)
 
-    nio "잠깐. 설마..."
+    nia "잠깐. 설마..."
 
-    $ hide_char("nio")
+    $ hide_char("nia")
     $ show_char("ian", "right", flip=True)
 
     ian "맞습니다."

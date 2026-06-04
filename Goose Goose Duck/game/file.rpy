@@ -75,6 +75,15 @@ define CLUE_DATABASE = {
         "desc": "복도에 쏟아진 와인 위를 누군가 밟고 지나간 흔적. \n주변에 와인이 묻은 발자국이 찍혀있다.",
         "order": 50,
     },
+    
+    "cctv_screen": {
+        "id": "cctv_screen",
+        "title": "서재 CCTV 화면",
+        "icon": "cctv_screen",
+        "evidence": "ev_cctv_screen",
+        "desc": "루이가 칼을 들고 모로를 위협하고 있는 사진이 CCTV에 찍혔다.",
+        "order": 60,
+    },
 }
 
 
@@ -126,14 +135,14 @@ define CHARACTER_DATABASE = {
         "order": 10,
     },
 
-    "nio": {
-        "id": "nio",
-        "name": "니오",
+    "nia": {
+        "id": "nia",
+        "name": "니아",
         "age": "22",
         "gender": "여성",
         "hand": "오른손",
         "desc": "호기심이 많고 주변을 잘 살피는 인물. \n처음 보는 장소와 사람에게 쉽게 관심을 보인다. \n가벼워 보이지만 관찰한 것을 잘 기억한다.",
-        "icon": "ic_nio",
+        "icon": "ic_nia",
         "tab_color": "#ffd900",
         "tab_selected_color": "#ffffff",
         "order": 20,
@@ -143,7 +152,7 @@ define CHARACTER_DATABASE = {
         "id": "sein",
         "name": "세인",
         "age": "46",
-        "gender": "남성",
+        "gender": "여성",
         "hand": "오른손",
         "desc": "감정 표현이 적고 말수가 적은 인물. \n어떤 상황에서도 크게 동요하지 않아 속내를 읽기 어렵다.",
         "icon": "ic_sein",
@@ -182,7 +191,7 @@ define CHARACTER_DATABASE = {
         "id": "ian",
         "name": "이안",
         "age": "33",
-        "gender": "여성",
+        "gender": "남성",
         "hand": "오른손",
         "desc": "주변을 경계하는 듯한 태도의 인물. \n말수가 적고 자신의 행적을 쉽게 드러내지 않는 듯하다.",
         "icon": "ic_ian",
@@ -227,7 +236,7 @@ default unlocked_characters = []
 
 default character_alive = {
     "mina": True,
-    "nio": True,
+    "nia": True,
     "sein": True,
     "kato": True,
     "rui": True,

@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/day01_deduction.rpy", line 126: end of line expected.
-    show screen bg over
+File "game/day01_deduction.rpy", line 83: end of line expected.
+    show screen at truecenter
                    ^
 
-Ren'Py Version: Ren'Py 8.5.3.26051504
-Thu Jun  4 02:05:02 2026
+Ren'Py Version: Ren'Py 8.5.2.26010301
+Thu Jun  4 10:55:45 2026

@@ -129,14 +129,14 @@ label day01_incident_start:
 
     "뒤에서 누군가의 발소리가 들렸다."
 
-    $ show_char("nio", "right", flip=True)
+    $ show_char("nia", "right", flip=True)
     with dissolve_normal
 
-    nio "진님! 무슨 일인가요?"
+    nia "진님! 무슨 일인가요?"
 
     jin "서재에서 불이 난 것 같습니다."
 
-    $ hide_char("nio")
+    $ hide_char("nia")
     $ show_char("kato", "right", flip=True)
 
     kato "이..이런!"
@@ -159,9 +159,9 @@ label day01_incident_start:
     "검은 연기가 쏟아져 나왔다."
 
     $ hide_char("kato")
-    $ show_char("nio", "right", flip=True)
+    $ show_char("nia", "right", flip=True)
 
-    nio "여.. 여기 소화기를 찾았어요! 이걸 사용하세요!"
+    nia "여.. 여기 소화기를 찾았어요! 이걸 사용하세요!"
 
     jin "어서 저한테 주세요..!"
 
@@ -187,15 +187,15 @@ label day01_study_fire:
 
     $ clear_chars()
     $ show_char("jin", "left")
-    $ show_char("nio", "right", flip=True)
+    $ show_char("nia", "right", flip=True)
 
     window show dissolve_normal
 
     "서재는 연기로 자욱했다."
 
-    nio "앞이 안 보여요!"
+    nia "앞이 안 보여요!"
 
-    $ hide_char("nio")
+    $ hide_char("nia")
     $ show_char("kato", "right", flip=True)
 
     kato "안쪽에..."
@@ -218,9 +218,9 @@ label day01_study_fire:
     "불길은 쉽게 잡히지 않았지만, 조금씩 잦아들기 시작했다."
 
     $ hide_char("kato")
-    $ show_char("nio", "right", flip=True)
+    $ show_char("nia", "right", flip=True)
 
-    nio "부..불이 잦아들고 있어요!"
+    nia "부..불이 잦아들고 있어요!"
 
     "진은 책상 아래와 벽난로 근처를 향해 다시 소화기를 뿌렸다."
 
@@ -254,9 +254,9 @@ label day01_study_fire:
 
     jin "......"
 
-    $ show_char("nio", "right", flip=True)
+    $ show_char("nia", "right", flip=True)
 
-    nio "꺄아아악!"
+    nia "꺄아아악!"
 
     window hide
 
@@ -267,7 +267,7 @@ label day01_study_fire:
 
     "반대편 입구에는 미나, 루이, 세인, 준, 이안이 있었다."
 
-    $ hide_char("nio")
+    $ hide_char("nia")
     $ show_char("mina", "right", flip=True)
 
     mina "누.. 누구지?"
@@ -285,9 +285,9 @@ label day01_study_fire:
     sein "......"
 
     $ hide_char("sein")
-    $ show_char("nio", "right", flip=True)
+    $ show_char("nia", "right", flip=True)
 
-    nio "저 사람... 모로 씨 아닌가요?"
+    nia "저 사람... 모로 씨 아닌가요?"
 
     "그렇다, 그는 모로였다."
 
@@ -295,7 +295,7 @@ label day01_study_fire:
 
     "반응은 없었다."
 
-    $ hide_char("nio")
+    $ hide_char("nia")
     $ show_char("mina", "right", flip=True)
 
     mina "안 돼... 장난이죠? 그냥 기절한 거죠?"
@@ -422,13 +422,13 @@ label day01_investigation_start:
     rui "필요한 게 있으면 말해주십시오."
 
     $ hide_char("rui")
-    $ show_char("nio", "right", flip=True)
+    $ show_char("nia", "right", flip=True)
 
-    nio "저는... 밖에 있어도 되죠?"
+    nia "저는... 밖에 있어도 되죠?"
 
     jin "네. 하지만 저택 밖으로는 나가지 마십시오."
 
-    $ hide_char("nio")
+    $ hide_char("nia")
     $ show_char("jun", "right", flip=True)
 
     jun "제가 손님들을 식당으로 모시겠습니다."

@@ -295,40 +295,40 @@ label day01_dining_guests_right:
 
     $ clear_chars()
     $ show_char("jin", "left")
-    $ show_char("nio", "right", flip=True)
+    $ show_char("nia", "right", flip=True)
     with dissolve_normal
 
-    nio "저기, 혹시 구스타프에서 오셨다고 했죠?"
+    nia "저기, 혹시 구스타프에서 오셨다고 했죠?"
 
     jin "그렇습니다."
 
-    nio "역시. 말투가 좀 다르다 했어요."
+    nia "역시. 말투가 좀 다르다 했어요."
 
     jin "관찰력이 좋으시군요."
 
-    nio "그냥... 이런 곳에 오면 볼 게 많잖아요."
+    nia "그냥... 이런 곳에 오면 볼 게 많잖아요."
 
-    nio "저 촛대도 그렇고, 벽에 걸린 그림도 그렇고."
+    nia "저 촛대도 그렇고, 벽에 걸린 그림도 그렇고."
 
-    $ hide_char("nio")
+    $ hide_char("nia")
     $ show_char("rui", "right", flip=True)
 
     rui "처음 온 저택에서 너무 돌아다니는 건 좋지 않을 겁니다."
 
     $ hide_char("rui")
-    $ show_char("nio", "right", flip=True)
+    $ show_char("nia", "right", flip=True)
 
-    nio "하하, 그럼요. 제가 워낙 그냥 궁금한 게 많아서요."
+    nia "하하, 그럼요. 제가 워낙 그냥 궁금한 게 많아서요."
 
     jin "성함은요?"
 
-    nio "음~ 그냥 니오라고 불러주세요."
+    nia "음~ 그냥 니오라고 불러주세요."
 
-    $ unlock_character("nio")
+    $ unlock_character("nia")
 
     jin "옆에 계신 분은 혹시?"
 
-    $ hide_char("nio")
+    $ hide_char("nia")
     $ show_char("sein", "right", flip=True)
 
     sein "세인입니다."
@@ -525,11 +525,11 @@ label day01_butler_appears:
     jun "주인님께서는 원래 예측하기 어려운 분입니다."
 
     $ hide_char("jun")
-    $ show_char("nio", "right", flip=True)
+    $ show_char("nia", "right", flip=True)
 
-    nio "그럼 저희는 여기서 계속 기다리면 되는 건가요?"
+    nia "그럼 저희는 여기서 계속 기다리면 되는 건가요?"
 
-    $ hide_char("nio")
+    $ hide_char("nia")
     $ show_char("jun", "right", flip=True)
 
     jun "오래 걸리지는 않을 겁니다."
@@ -573,21 +573,21 @@ label day01_butler_appears:
     mina "음... 기다리는 것보단 낫겠네요."
 
     $ hide_char("mina")
-    $ show_char("nio", "right", flip=True)
+    $ show_char("nia", "right", flip=True)
 
-    nio "둘러봐도 된다고요?"
+    nia "둘러봐도 된다고요?"
 
-    $ hide_char("nio")
+    $ hide_char("nia")
     $ show_char("jun", "right", flip=True)
 
     jun "물론입니다. 다만 위험한 물건이 많은 곳도 있으니 혼자 너무 멀리 가시지는 않는 편이 좋겠습니다."
 
     $ hide_char("jun")
-    $ show_char("nio", "right", flip=True)
+    $ show_char("nia", "right", flip=True)
 
-    nio "알겠습니다."
+    nia "알겠습니다."
 
-    $ hide_char("nio")
+    $ hide_char("nia")
     $ show_char("jun", "right", flip=True)
 
     jun "만찬은 주인님께서 돌아오시는 대로 시작하겠습니다."
