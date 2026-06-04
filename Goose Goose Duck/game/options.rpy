@@ -17,12 +17,12 @@ define config.name = _("Goose Goose Duck")
 ## 위에 주어진 제목이 주 메뉴 화면에 표시되는지 결정합니다. 제목을 숨기려면 이것
 ## 을 False로 설정하십시오.
 
-define gui.show_name = True
+define gui.show_name = False
 
 
 ## 게임의 버전입니다.
 
-define config.version = "1.0"
+# define config.version = "1.0"
 
 
 ## 게임의 about 스크린에 배치되는 텍스트입니다. 텍스트를 삼중 따옴표 사이에 배치
@@ -116,7 +116,7 @@ define config.window_hide_transition = Dissolve(.2)
 ## 기본 글자 속도를 제어합니다. 기본적으로, 0은 즉시이며 다른 숫자는 초당 입력
 ## 할 문자 수입니다.
 
-default preferences.text_cps = 0
+default preferences.text_cps = 30
 
 
 ## 기본 auto-forward 지연 시간입니다. 숫자가 클수록 대기 시간이 길어지며, 0 ~ 30

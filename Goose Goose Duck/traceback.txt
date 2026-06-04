@@ -1,0 +1,38 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 3, in script call
+    call day01_daily_start from _call_day01_daily_start
+  File "game/day01_deduction.rpy", line 1130, in script
+    show text "{color=#ffffff}{size=32}계속{/size}{/color}" at rightbottom
+  File "game/day01_deduction.rpy", line 1130, in <module>
+    show text "{color=#ffffff}{size=32}계속{/size}{/color}" at rightbottom
+NameError: name 'rightbottom' is not defined
+
+-- Full Traceback ------------------------------------------------------------
+
+Traceback (most recent call last):
+  File "game/script.rpy", line 3, in script call
+    call day01_daily_start from _call_day01_daily_start
+  File "game/day01_deduction.rpy", line 1130, in script
+    show text "{color=#ffffff}{size=32}계속{/size}{/color}" at rightbottom
+  File "renpy/ast.py", line 1364, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/ast.py", line 726, in show_imspec
+    at_list = [renpy.python.py_eval(i) for i in at_list]
+               ~~~~~~~~~~~~~~~~~~~~^^^                  
+  File "renpy/python.py", line 1308, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/python.py", line 1301, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+           ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "game/day01_deduction.rpy", line 1130, in <module>
+    show text "{color=#ffffff}{size=32}계속{/size}{/color}" at rightbottom
+NameError: name 'rightbottom' is not defined
+
+Windows-11-10.0.26200-SP0 AMD64
+Ren'Py 8.5.3.26051504
+Goose Goose Duck 
+Thu Jun  4 03:27:32 2026

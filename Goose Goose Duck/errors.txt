@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/day01_deduction.rpy", line 126: end of line expected.
+    show screen bg over
+                   ^
+
+Ren'Py Version: Ren'Py 8.5.3.26051504
+Thu Jun  4 02:05:02 2026
